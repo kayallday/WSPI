@@ -1,16 +1,11 @@
 /* Component Stylesheet 
 ============================================================
 ============================================================*/
-/* ============================================================
-  PRIMARY STRUCTURE
-============================================================ */
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
-/* ============================================================
-  SECTIONS
-============================================================ */
+
 section.module:last-child {
   margin-bottom: 0;
 }
@@ -55,6 +50,8 @@ section.module.parallax-2 {
 section.module.parallax-3 {
   background-image: url("images/de_la_cruz.jpg");
 }
+
+/* Media Queries */
 
 @media all and (min-width: 600px) {
   section.module h2 {
