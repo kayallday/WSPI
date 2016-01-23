@@ -2,6 +2,7 @@
 ============================================================
 ============================================================*/
 .container {
+  display: inline-block;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -34,7 +35,7 @@ section.module.parallax {
 }
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 30px;
+  font-size: 20px;
   line-height: 600px;
   font-weight: 700;
   text-align: center;
@@ -42,30 +43,52 @@ section.module.parallax h1 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 section.module.parallax-1 {
-  background-image: url("images/blue_lilac.jpg");
+  background-image: url("images/supercar_art.jpg");
 }
-section.module.parallax-2 {
-  background-image: url("images/falls_cave.jpg");
+
+/* Button Styling */
+
+a.button {
+  margin: auto;
+  padding: 2px;
+  background-color: #cccccc;
+  border: 1px solid #666;
+  color: #000;
+  text-decoration: none;
 }
-section.module.parallax-3 {
-  background-image: url("images/de_la_cruz.jpg");
+
+article {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  padding: 5px;
+  background-color: transparent;
+  border: hidden;
 }
+
+
+img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
 
 /* Media Queries */
 
 @media all and (min-width: 600px) {
   section.module h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
   section.module p {
     font-size: 15px;
   }
   section.module.parallax h1 {
-    font-size: 75px;
+    font-size: 30px;
   }
 }
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
-    font-size: 120px;
+    font-size: 60px;
   }
 }
