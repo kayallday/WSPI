@@ -4,17 +4,13 @@
 .container {
   display: inline-block;
   max-width: 960px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 section.module:last-child {
   margin-bottom: 0;
 }
-section.module h2 {
-  margin-bottom: 40px;
-  font-family: "Roboto Slab", serif;
-  font-size: 25px;
-}
+
 section.module p {
   margin-bottom: 40px;
   font-size: 16px;
@@ -23,9 +19,7 @@ section.module p {
 section.module p:last-child {
   margin-bottom: 0;
 }
-section.module.content {
-  padding: 40px 0;
-}
+
 section.module.parallax {
   height: 600px;
   background-position: 50% 50%;
@@ -33,24 +27,28 @@ section.module.parallax {
   background-attachment: fixed;
   background-size: cover;
 }
+
 section.module.parallax h1 {
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   font-size: 20px;
   line-height: 600px;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 section.module.parallax-1 {
   background-image: url("images/supercar_art.jpg");
 }
 
+p {
+  margin: auto;
+  padding: 1%;
+}
 /* Button Styling */
 
 a.button {
   margin: auto;
-  padding: 2px;
+  padding: 5px;
   background-color: #cccccc;
   border: 1px solid #666;
   color: #000;
@@ -61,16 +59,15 @@ article {
   display: inline-block;
   width: 300px;
   height: 300px;
-  margin: auto;
+  margin: 5px;
   padding: 5px;
   background-color: transparent;
-  border: hidden;
 }
 
 
 img {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 250px;
+  max-height: 250px;
 }
 
 
@@ -86,9 +83,30 @@ img {
   section.module.parallax h1 {
     font-size: 30px;
   }
+  img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  article {
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    padding: 2px;
+  }
 }
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
     font-size: 60px;
+
+  }
+  article {
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+    padding: 5px;
+  }
+  img {
+    max-width: 250px;
+    max-height: 250px;
   }
 }
