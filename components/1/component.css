@@ -1,77 +1,74 @@
 /* Component Stylesheet 
 ============================================================
 ============================================================*/
-.container {
-  display: inline-block;
-  max-width: 960px;
-  margin: auto;
+
+
+html { font-size: 62.5%; }
+
+body {
+  font: 1rem Arial;
 }
 
-section.module:last-child {
-  margin-bottom: 0;
+section {
+  position: relative;
+  padding: 7rem;
 }
 
-section.module p {
-  margin-bottom: 40px;
-  font-size: 16px;
-  font-weight: 300;
-}
-section.module p:last-child {
-  margin-bottom: 0;
-}
-
-section.module.parallax {
-  height: 600px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+#popularCategories {
+  padding: 7rem;
+  background: url("images/supercar_art.jpg") no-repeat 50% 50% fixed;
   background-size: cover;
-}
-
-section.module.parallax h1 {
   color: #ffffff;
-  font-size: 20px;
-  line-height: 600px;
-  font-weight: 700;
-  text-align: left;
-  text-transform: uppercase;
-}
-section.module.parallax-1 {
-  background-image: url("images/supercar_art.jpg");
 }
 
-p {
-  margin: auto;
-  padding: 1%;
-}
-/* Button Styling */
+#popularCategories::after {
+  content:"";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0, 0, 0, 0.2);
 
-a.button {
-  margin: auto;
-  padding: 5px;
-  background-color: #cccccc;
-  border: 1px solid #666;
-  color: #000;
-  text-decoration: none;
+}
+.container {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-article {
-  display: inline-block;
-  width: 300px;
-  height: 300px;
-  margin: 5px;
-  padding: 5px;
-  background-color: transparent;
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#popularCategories article {
+  width: calc(100% /3 - 2rem);
+  float: left;
+}
+#popularCategories article:not(:nth-of-type(3n)) {
+  margin-right: 3rem;
 }
 
 
 img {
-  max-width: 250px;
-  max-height: 250px;
+  width: 100%;
+}
+
+a {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 1rem 0;
+  padding: 0.5rem 2rem;
+  background-color: #cccccc;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+
 }
 
 
-/* Media Queries */
+
+/* Media Queries
 
 @media all and (min-width: 600px) {
   section.module h2 {
