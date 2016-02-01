@@ -4,7 +4,9 @@
 	<title>WSP Component: Kelsey Brickel</title>
 
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
-	<link rel="stylesheet" type="text/css" href="component.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="icon" href="http://static.templatemonster.com/img/favicon.ico?d=69a18d0" type="image/x-icon">
 
 	
 </head>
@@ -12,13 +14,50 @@
 
 	<!-- Component Sticky Footer -->
     <header>
-    <h1>Sticky Footer</h1>
+    <h1>Footer</h1>
     </header>
-    <section class="images">
-        <img class="lazy" src="images/ferrari_enzo_red.jpg" alt="Ferrari"/>
-        <img class="lazy" src="images/lamborghini_aventador.jpg" alt="Lamborghini"/>
-        <img class="lazy" src="images/nissan_gt_r.jpg" alt="Nissan"/>
-    </section>
+    <footer>
+        <div class="container">
+            <h2>Newsletter</h2>
+            <p>Subscribe to our newsletter to receive news, updates, and another stuff by email.</p>
+            <form class="mailForm" method="post" >
+                <input type="hidden" name="form-type" value="contact">
+                <fieldset>
+                    <div class="row">
+                        ::before
+                    <label data-add-placeholder class="mfInput">
+                        <input type="text" name="email" data-constraints="@NotEmpty @Email">
+                        <span class="validation show error" data-index="0">Please enter your e-mail!</span>
+                        <span class="mfPlaceHolder default">Your Email Address</span>
+                    </label>
+                    </div>
+                    <div class="btn">
+                        <button class="btn1" type="submit">Subscribe</button>
+                        ::after
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+        <address>
+            <img alt src="images/gmap_marker.png">
+            <p>
+                <a href="#">
+                    28 Jackson Blvd Ste 1020
+                    <br>
+                    Chicago, IL 60604-2340
+                </a>
+            </p>
+        </address>
+        <div class="copyright">
+            <strong>Corpexa</strong>
+            &copy;
+            <span id="copyright-year">2016</span>
+            | All Rights Reserved
+        </div>
+        <!-- Facebook, Twitter, and Instagram Icons I could not figure out for the life of me -->
+        ::after
+    </footer>
 
 	<!-- End Component -->
 <script type="text/javascript" src="js/script.js"></script>
