@@ -1,0 +1,10 @@
+http://kmbrickel.github.io/WSPI/
+
+Summary:
+This project is a compilation of components I wanted to learn to code and create. I have five components that I chose to learn. I feel that learning all of them will help me in the future with this degree. They were all challenging in their own way. It was also very challenging to exercise time management to accomplish everything. I tried mostly to use CSS and JavaScript to create the components and not use any frameworks.
+
+
+
+
+
+Postmortem: Researching, finding resources, and communicating with students went very well. The main challenges were unlearning bad habits of coding. Writing semantic code is not something that can be learned over night and it is very challenging. I think I'm going to have to take additional classes outside of fullsail just to try to stay on top. There aren't enough one-on-one sessions with online students to ensure they're understanding the material.
